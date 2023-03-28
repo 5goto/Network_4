@@ -1,0 +1,145 @@
+// Please delete before starting
+// body
+// 	height 100vh
+// 	background-color: #0093E9;
+// 	background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+// 	display flex
+// 	align-items center
+// 	justify-content center
+// 	font-size 16px
+// 	color #fff
+// 	text-align center
+// 	flex-direction column
+// 	padding 30px
+
+html
+body 
+  height: 100%;
+  background-color: #164b69;
+  font-family: Arial;
+  font-size: 14px;
+  color: black;
+
+
+ul.navigation-bar
+	list-style-type: none
+	display: flex
+	justify-content: space-around
+
+
+li
+	padding: 5px;
+
+a
+	margin: auto;
+	font-weight: bold;
+	text-decoration: none;
+	&:link
+		text-decoration: none;
+		color: black;
+	&:visited
+		text-decoration: none;
+		color: black;
+	&:hover
+		background-color: #DCDCDC;
+	// &:link
+	// 	text-decoration: none;
+
+
+
+div.container
+	padding: 2%;
+	margin: 2%;
+	background-color: #E3E3E3;
+	display: flex
+	flex-direction: column
+	// width: 700px;
+	// margin: auto
+	// align-items: center;
+
+p
+	text-align: justify;
+	line-height: 2;
+	text-indent: 15px;
+	margin-right: 20px;
+
+section.text-and-image 
+	display: flex
+	margin-bottom: 5%;
+	min-width: 700px;
+	min-height: 700px;
+	align-items: center
+
+main
+	display: flex
+	flex-direction: column
+	align-items: center
+
+iframe
+	width: 100%;
+	height: 500px;
+
+.section-img
+	max-width: 400px;
+	flex: 1 0 auto;
+	margin auto;
+
+.center-text
+	flex: 0 1 auto;
+
+
+@media (max-width: 600px)
+	.navigation-bar
+		flex-wrap: wrap;
+	.text-and-image
+		flex-direction: column
+
+	.section-img
+		oprder: 0;
+	.center-text
+		order: 2;
+	p.center-text
+		width: 300px
+
+///second
+
+.images
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex: 1 0;
+	height: 340px;
+
+.text
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+
+img
+	width: 33%
+
+@media (max-width: 600px)
+	.images
+		flex-direction: column
+	img
+		width: 100%
+
+/// last-page
+.bottom
+	display: flex
+
+.right
+	// margin-left: 7%
+	flex: 0 1 auto
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+
+.top-right
+	width: 93%
+
+.bottom-right
+	width: 93%
+
+.current
+	background-color: #DCDCDC;

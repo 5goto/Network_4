@@ -1,0 +1,22 @@
+block variables 
+	-var currentPage = ''
+
+<!DOCTYPE html>
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		title CSS
+		link(rel="stylesheet", href="css/bootstrap-reboot.min.css")
+		link(rel="stylesheet", href="css/main.css")
+	body
+		div.container
+			nav.menu
+				ul.navigation-bar
+					each key, value in { 'CSS' : 'index' , 'Синтаксис CSS': 'last-page', 'Вставка CSS' :'#', 'Вставка CSS' :'#', 'CSS текст' :'#', 'CSS шрифт' :'second_page', 'Блоки' :'#'}
+						li
+							if currentPage == key
+								a(class="current" href= key + ".html")= value
+							else 
+								a(href= key + ".html")= value
+			block first-main
